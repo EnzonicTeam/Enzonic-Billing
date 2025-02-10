@@ -15,8 +15,8 @@ const PricingCard: React.FC<PricingCardProps> = ({ tier, price, ram, cpu, isPopu
       <div
         className={`relative p-6 rounded-2xl border transition-all duration-300 hover:shadow-xl group-hover:animate-card-hover ${
           isPopular
-            ? "border-pricing-border bg-pricing-highlight"
-            : "border-gray-200 bg-white"
+            ? "border-primary bg-gray-800/50"
+            : "border-gray-700 bg-gray-800/30"
         }`}
       >
         {isPopular && (
@@ -26,10 +26,10 @@ const PricingCard: React.FC<PricingCardProps> = ({ tier, price, ram, cpu, isPopu
         )}
         <div className="space-y-4">
           <div className="text-center space-y-2">
-            <h3 className="text-xl font-semibold text-gray-900">{tier}</h3>
+            <h3 className="text-xl font-semibold text-white">{tier}</h3>
             <div className="flex justify-center items-baseline">
-              <span className="text-4xl font-bold text-gray-900">{price}</span>
-              <span className="ml-1 text-gray-500">/month</span>
+              <span className="text-4xl font-bold text-white">{price}</span>
+              <span className="ml-1 text-gray-400">/month</span>
             </div>
           </div>
 
@@ -38,32 +38,26 @@ const PricingCard: React.FC<PricingCardProps> = ({ tier, price, ram, cpu, isPopu
               <div className="flex-shrink-0">
                 <Check className="h-5 w-5 text-primary" />
               </div>
-              <p className="text-gray-600">{ram} RAM</p>
+              <p className="text-gray-300">{ram} RAM</p>
             </div>
             <div className="flex items-center space-x-3">
               <div className="flex-shrink-0">
                 <Check className="h-5 w-5 text-primary" />
               </div>
-              <p className="text-gray-600">{cpu} CPU</p>
+              <p className="text-gray-300">{cpu} CPU</p>
             </div>
             <div className="flex items-center space-x-3">
               <div className="flex-shrink-0">
                 <Check className="h-5 w-5 text-primary" />
               </div>
-              <p className="text-gray-600">24/7 Support</p>
-            </div>
-            <div className="flex items-center space-x-3">
-              <div className="flex-shrink-0">
-                <Check className="h-5 w-5 text-primary" />
-              </div>
-              <p className="text-gray-600">DDoS Protection</p>
+              <p className="text-gray-300">DDoS Protection</p>
             </div>
           </div>
 
           <button className={`w-full py-3 px-4 rounded-lg font-medium transition-all duration-200 ${
             isPopular
               ? "bg-primary text-white hover:bg-primary/90"
-              : "bg-gray-50 text-gray-900 hover:bg-gray-100"
+              : "bg-gray-700 text-white hover:bg-gray-600"
           }`}>
             Select Plan
           </button>
