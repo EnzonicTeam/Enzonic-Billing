@@ -35,6 +35,25 @@ const Index = () => {
             />
           ))}
         </div>
+
+        <div className="text-center mt-16 space-y-4">
+          <h2 className="text-2xl font-semibold text-white">Want a bigger server?</h2>
+          <p className="text-gray-300">
+            Contact us at:{" "}
+            <a href="mailto:host@enzonic.com" className="text-primary hover:underline">
+              host@enzonic.com
+            </a>
+            {" "}or on{" "}
+            <a 
+              href="https://discord.gg/hp5qj94F3d" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-primary hover:underline"
+            >
+              Discord
+            </a>
+          </p>
+        </div>
       </div>
     </div>
   );

@@ -54,13 +54,17 @@ const PricingCard: React.FC<PricingCardProps> = ({ tier, price, ram, cpu, isPopu
             </div>
           </div>
 
-          <button className={`w-full py-3 px-4 rounded-lg font-medium transition-all duration-200 ${
-            isPopular
-              ? "bg-primary text-white hover:bg-primary/90"
-              : "bg-gray-700 text-white hover:bg-gray-600"
-          }`}>
+          <a 
+            href="https://www.patreon.com/enzonic_com/membership"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`w-full py-3 px-4 rounded-lg font-medium transition-all duration-200 inline-block text-center ${
+              isPopular
+                ? "bg-primary text-white hover:bg-primary/90"
+                : "bg-gray-700 text-white hover:bg-gray-600"
+            }`}>
             Select Plan
-          </button>
+          </a>
         </div>
       </div>
     </div>
