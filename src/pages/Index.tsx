@@ -50,6 +50,17 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800">
+      <div className="absolute top-4 left-4">
+        <a
+          href="https://enzonic.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
+        >
+          Home
+        </a>
+      </div>
+
       <div className="container mx-auto px-4 py-16">
         <div className="text-center space-y-4 mb-16">
           <h1 className="text-4xl font-bold text-white sm:text-5xl">
