@@ -3,12 +3,49 @@ import PricingCard from "../components/PricingCard";
 
 const Index = () => {
   const pricingTiers = [
-    { tier: "Minecraft Server Tier 1", price: "$1.99", ram: "1GB", cpu: "I5 CPU" },
-    { tier: "Minecraft Server Tier 2", price: "$2.99", ram: "4GB", cpu: "I5 CPU" },
-    { tier: "Minecraft Server Tier 3", price: "$4.99", ram: "6GB", cpu: "I5 CPU", isPopular: true },
-    { tier: "Minecraft Server Tier 4", price: "$5.99", ram: "8GB", cpu: "I5 CPU" },
-    { tier: "Minecraft Server Tier 5", price: "$8.99", ram: "10GB", cpu: "I5 CPU" },
-    { tier: "Minecraft Server Tier 6", price: "$10.99", ram: "12GB", cpu: "I5 CPU" },
+    { 
+      tier: "Minecraft Server Tier 1", 
+      price: "$1.99", 
+      ram: "1GB", 
+      cpu: "I5 CPU",
+      checkoutUrl: "https://www.patreon.com/checkout/enzonic_com?rid=25112263"
+    },
+    { 
+      tier: "Minecraft Server Tier 2", 
+      price: "$2.99", 
+      ram: "4GB", 
+      cpu: "I5 CPU",
+      checkoutUrl: "https://www.patreon.com/checkout/enzonic_com?rid=25112270"
+    },
+    { 
+      tier: "Minecraft Server Tier 3", 
+      price: "$4.99", 
+      ram: "6GB", 
+      cpu: "I5 CPU", 
+      isPopular: true,
+      checkoutUrl: "https://www.patreon.com/checkout/enzonic_com?rid=25112277"
+    },
+    { 
+      tier: "Minecraft Server Tier 4", 
+      price: "$5.99", 
+      ram: "8GB", 
+      cpu: "I5 CPU",
+      checkoutUrl: "https://www.patreon.com/checkout/enzonic_com?rid=25112280"
+    },
+    { 
+      tier: "Minecraft Server Tier 5", 
+      price: "$8.99", 
+      ram: "10GB", 
+      cpu: "I5 CPU",
+      checkoutUrl: "https://www.patreon.com/checkout/enzonic_com?rid=25112287"
+    },
+    { 
+      tier: "Minecraft Server Tier 6", 
+      price: "$10.99", 
+      ram: "12GB", 
+      cpu: "I5 CPU",
+      checkoutUrl: "https://www.patreon.com/checkout/enzonic_com?rid=25112289"
+    },
   ];
 
   return (
@@ -32,6 +69,7 @@ const Index = () => {
               ram={tier.ram}
               cpu={tier.cpu}
               isPopular={tier.isPopular}
+              checkoutUrl={tier.checkoutUrl}
             />
           ))}
         </div>

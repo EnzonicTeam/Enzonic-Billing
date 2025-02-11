@@ -7,9 +7,10 @@ interface PricingCardProps {
   ram: string;
   cpu: string;
   isPopular?: boolean;
+  checkoutUrl: string;
 }
 
-const PricingCard: React.FC<PricingCardProps> = ({ tier, price, ram, cpu, isPopular }) => {
+const PricingCard: React.FC<PricingCardProps> = ({ tier, price, ram, cpu, isPopular, checkoutUrl }) => {
   return (
     <div className="group animate-fade-in">
       <div
@@ -55,7 +56,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ tier, price, ram, cpu, isPopu
           </div>
 
           <a 
-            href="https://www.patreon.com/enzonic_com/membership"
+            href={checkoutUrl}
             target="_blank"
             rel="noopener noreferrer"
             className={`w-full py-3 px-4 rounded-lg font-medium transition-all duration-200 inline-block text-center ${
